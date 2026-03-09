@@ -2,9 +2,17 @@
 function App() {
   return (
     <div>
-      <h1>Hi react</h1>
+      <Hi></Hi>
     </div>
      
+  )
+}
+function Hi(){
+  return(
+    <div>
+      <h1>hi hanish</h1>
+      <h2>how can i help you?</h2>
+    </div>
   )
 }
 
