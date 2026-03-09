@@ -1,7 +1,8 @@
-
+import UserComponent from "./UserComponent"
 function App() {
   return (
     <div>
+      <UserComponent />
       <h1>List of fruits</h1>
       <Fruit></Fruit>
       <h1>list of colors</h1>
