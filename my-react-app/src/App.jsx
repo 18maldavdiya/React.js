@@ -1,10 +1,12 @@
 import Login , {Profile,Setting} from "./UserComponent"
 import Todo from "./ToDo"
+import Curly from "./Curly"
+
 
 function App() {
   return (
     <div>
-      <Todo/>
+      <Curly/>
     </div>
      
   )
