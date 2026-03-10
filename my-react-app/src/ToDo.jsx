@@ -6,6 +6,7 @@ function Todo(){
                 <li>go to school</li>
                 <li>go to work</li>
             </ul>
+            <button>Click me</button>
         </div>
     )
 }

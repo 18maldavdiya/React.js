@@ -1,11 +1,10 @@
 import Login , {Profile,Setting} from "./UserComponent"
+import Todo from "./ToDo"
 
 function App() {
   return (
     <div>
-      <Login />
-      <Profile />
-      <Setting></Setting>
+      <Todo/>
     </div>
      
   )
