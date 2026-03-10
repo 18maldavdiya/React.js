@@ -12,5 +12,12 @@ export function Profile(){
         </div>
     )
 }
+export function Setting(){
+    return(
+        <div>
+            <h1>hi this is setting</h1>
+        </div>
+    )
+}
 
 export default Login;

@@ -1,14 +1,11 @@
-import Login , {Profile} from "./UserComponent"
+import Login , {Profile,Setting} from "./UserComponent"
 
 function App() {
   return (
     <div>
       <Login />
       <Profile />
-      <h1>List of fruits</h1>
-      <Fruit></Fruit>
-      <h1>list of colors</h1>
-      <Color></Color>
+      <Setting></Setting>
     </div>
      
   )
