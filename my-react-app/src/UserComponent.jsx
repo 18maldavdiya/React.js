@@ -5,4 +5,12 @@ function Login () {
         </div>
     )
 }
+export function Profile(){
+    return(
+        <div>
+            <h1>hi this is profile</h1>
+        </div>
+    )
+}
+
 export default Login;
