@@ -6,7 +6,7 @@ function Curly() {
     city: "Indore"
   };
 
-  const userName = ["hanish", "rohan", "sachin"];
+  const userName = ["hanish", "rohan", "sachin", "Mohan"];
 
   function fruit(){
     const name = "hanish";
