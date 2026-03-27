@@ -5,13 +5,10 @@ import Curly from "./Curly"
 
 
 function App() {
-  function callFun(){
-    alert("fun is called");
-  }
+  
   return (
     <div>
-      <h1>Event call</h1>
-      <button onClick={callFun}>Click me</button>
+
     </div>
      
   )
