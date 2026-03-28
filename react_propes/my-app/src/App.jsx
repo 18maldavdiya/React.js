@@ -1,12 +1,11 @@
 import './App.css'
 import Product from './Product';
+import 
 function App() {
   return (
-    <>
-     <Product/>
-     <Product/>
-     
-    </>
+   <>
+   <ProductTab/>
+   </>
   );
 }
 
