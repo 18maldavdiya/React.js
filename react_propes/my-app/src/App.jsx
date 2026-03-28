@@ -1,6 +1,6 @@
 import './App.css'
 import Product from './Product';
-import 
+import ProductTab from './ProductTab';
 function App() {
   return (
    <>
