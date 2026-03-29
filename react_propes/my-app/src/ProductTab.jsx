@@ -2,8 +2,8 @@ import Product from "./Product"
 function ProductTab(){
     return(
     <>
-     <Product/>
-     <Product/>
+     <Product title = "phone" price = {10000}/>
+     <Product title = "laptop" price = {200000}/>
      
     </>
     )
