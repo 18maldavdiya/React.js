@@ -1,11 +1,10 @@
 import Product from "./Product"
 function ProductTab(){
-    let features = [<li>hi -tech</li>, <li>good-quality</li>, <li>best in range</li>]
+    //let features = ["hi -tech", "good-quality","best in range"];
     return(
     <>
-     <Product title = "phone" price = {10000} features={features}/>
-     <Product title = "laptop" price = {200000} features ={features}/>
-     
+     <Product title = "phone" price = {10000} />
+     <Product title = "laptop" price = {200000}/>
     </>
     )
 }
