@@ -3,7 +3,9 @@ import "./Product.css";
 function Product({title, price,features}) {
   return (
     <div className="Product">
-      <p>Product</p>
+      <p>Title</p>
+      <p>Description</p>
+      <price/>
     </div>
   );
 }

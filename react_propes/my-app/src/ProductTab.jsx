@@ -1,4 +1,5 @@
 import Product from "./Product"
+import Price from "./Price";
 function ProductTab(){
     return(
     <>
