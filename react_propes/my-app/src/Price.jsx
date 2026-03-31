@@ -1,8 +1,8 @@
-function Price(){
+function Price({oldprice,newprice}){
     return(
         <div>
-            <p>oldprice</p>
-            <p>newprice</p>
+            <p>{oldprice}</p>
+            <p>{newprice}</p>
         </div>
     )
 

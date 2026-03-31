@@ -1,11 +1,13 @@
 import "./Product.css";
-
-function Product({title, price,features}) {
+import Price from "./Price";
+function Product({title}) {
+  let oldPrice = ["1000" , "20,254", "4500", "45'620"];
+  let newPrice = ["800" , "15,000", "4000", "40'000"]; 
   return (
     <div className="Product">
-      <p>Title</p>
+      <h3>{title}</h3>
       <p>Description</p>
-      <price/>
+      <Price oldprice={oldPrice[0]} newprice={newPrice[0]} />
     </div>
   );
 }
