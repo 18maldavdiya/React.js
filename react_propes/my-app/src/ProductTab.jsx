@@ -1,12 +1,11 @@
 import Product from "./Product"
-
 function ProductTab(){
     return(
     <>
      <Product/>
      <Product/>
-     <product/>
-     <product/>
+     <Product/>
+     <Product/>
     </>
     )
 }
