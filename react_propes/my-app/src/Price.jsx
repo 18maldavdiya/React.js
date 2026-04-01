@@ -7,10 +7,14 @@ function Price({oldprice,newprice}){
         fontWeight : "bold"
     }
     let styles3 = {
+        justifyContent : "center",
+        display : "flex",
+        texxtAlign : "center",
         backgroundColor : "#e0c367",
+        width : "200px",
         height : "30px",
-        borderBottomLeftRadius : "15px",
-        borderBottomRightRadius : "15px",
+        borderBottomLeftRadius : "20px",
+        borderBottomRightRadius : "20px",
 
     }
     return(

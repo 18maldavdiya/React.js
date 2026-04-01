@@ -1,13 +1,12 @@
 import Product from "./Product"
 import Price from "./Price";
 function ProductTab(){
-    let style = {
-        display : "flex",
-        flaxWrap : "wrap",
-        justifyContent : "center",
-        alignIteams : "center"
-
-    }
+   let style = {
+    display: "flex",
+    justifyContent: "center",
+    flexWrap: "wrap",
+    alignItems: "center"
+};
     return(
         
     <div style={style}>
