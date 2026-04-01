@@ -9,7 +9,9 @@ function ProductTab(){
 
     }
     return(
+        
     <div style={style}>
+       
      <Product title="Tech Product" idx={0}/>
      <Product title="Ev product" idx = {1}/>
      <Product title = "Another product" idx ={2}/>
