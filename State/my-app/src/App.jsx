@@ -1,7 +1,10 @@
+import  "./App.css";
+import Counter from "./Counter"; 
 function App(){
   return(
     <>
-    <h1>my react</h1>
+    <h1>my react</h1>  
+    <Counter />
     </>
 
   )
