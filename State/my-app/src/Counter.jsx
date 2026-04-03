@@ -1,5 +1,6 @@
+import {useState} from 'react';
 function Counter(){
-   let arr =  useState(); 
+   let arr =  useState(0); 
    console.log(arr);
     return(
         <div>
