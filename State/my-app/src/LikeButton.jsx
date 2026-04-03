@@ -20,4 +20,4 @@ function LikeButton(){
         </div>
     )
 }
-export default LikeButton;
+export default LikeButton
