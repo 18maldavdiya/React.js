@@ -4,8 +4,8 @@ function Counter(){
    console.log(arr);
     return(
         <div>
-        <h3>Count = {count}</h3>
-        <button onClick={incCount}>Increase Count</button>
+        <h3>Count = {}</h3>
+        <button >Increase Count</button>
         </div>
     )
 }
