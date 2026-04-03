@@ -1,9 +1,6 @@
 function Counter(){
-    let count = 0;
-    function incCount(){
-        count += 1;
-        console.log(count);
-    }
+   let arr =  useState(); 
+   console.log(arr);
     return(
         <div>
         <h3>Count = {count}</h3>
@@ -12,4 +9,4 @@ function Counter(){
     )
 }
 
-export default Counter
+export default Counter;
