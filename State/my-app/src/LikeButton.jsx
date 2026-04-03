@@ -1,7 +1,9 @@
 function LikeButton(){
     return(
         <div>
-            <p>Like Button</p>
+            <p>
+                <i className="fa-regular fa-heart"></i>
+            </p>
         </div>
     )
 }
