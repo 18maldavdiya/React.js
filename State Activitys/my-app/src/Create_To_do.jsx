@@ -6,6 +6,9 @@ function Create_To_do(){
     let addnewTodo = () =>{
         console.log("Add new task in todo");
     }
+    let updatetodo = (event) =>{
+        console.log(event.target);
+    }
     return(
         <div>
             <input placeholder="Add a task" value={newTodo}></input>
