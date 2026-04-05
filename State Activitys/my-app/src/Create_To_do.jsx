@@ -1,11 +1,16 @@
 import { useState } from "react";
 function Create_To_do(){
     let [todos,setTodos] = useState(["sample to do"]);
+    let [newTodo,setNewTodo] = useState("");
+
+    let addnewTodo = () =>{
+        console.log("Add new task in todo");
+    }
     return(
         <div>
-            <input placeholder="Add a task"></input>
+            <input placeholder="Add a task" value={newTodo}></input>
              <br></br>
-            <button>Add task</button>
+            <button onClick={addnewTodo}>Add task</button>
             <br></br>
             <br></br>
             <br></br>
@@ -13,7 +18,9 @@ function Create_To_do(){
             <h3>Take todo</h3>
             <ul>
                 {
-                    
+                    todos.map((todo) =>(
+                       <li>{todo}</li>
+                    ))
                 }
 
             </ul>
