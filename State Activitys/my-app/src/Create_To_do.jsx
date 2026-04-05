@@ -1,5 +1,6 @@
 import { useState } from "react";
 function Create_To_do(){
+    let [todos,setTodos] = useState(["sample to do"]);
     return(
         <div>
             <input placeholder="Add a task"></input>
@@ -10,6 +11,12 @@ function Create_To_do(){
             <br></br>
             <hr></hr>
             <h3>Take todo</h3>
+            <ul>
+                {
+                    
+                }
+
+            </ul>
         </div>
     )
 }
