@@ -4,7 +4,7 @@ import './App.css'
 function App(){
   return(
     <div>
-      <LudoBoard/>
+      <Create_To_do/>
     </div>
   )
 }
