@@ -4,14 +4,16 @@ function Create_To_do(){
     let [newTodo,setNewTodo] = useState("");
 
     let addnewTodo = () =>{
-        console.log("Add new task in todo");
+        setTodos([...todos,newTodo]);
+        setNewTodo("");
     }
     let updatetodo = (event) =>{
-        console.log(event.target);
+        setNewTodo(event.target.value);
     }
+
     return(
         <div>
-            <input placeholder="Add a task" value={newTodo}></input>
+            <input placeholder="Add a task" value ={newTodo}onChange={updatetodo}></input>
              <br></br>
             <button onClick={addnewTodo}>Add task</button>
             <br></br>
