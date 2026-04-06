@@ -4,12 +4,18 @@ function Create_To_do(){
     let [todos,setTodos] = useState([{task:"sample-task",id: uuidv4()}]);
     let [newTodo,setNewTodo] = useState("");
 
-    let addnewTodo = () =>{
-        setTodos([...todos,{task: newTodo, id: uuidv4()}]);
-        setNewTodo("");
-    }
+   let addnewTodo = () =>{
+    setTodos((prevTodos) =>{
+        return [...prevTodos,{task:newTodo,id:uuidv4()}];
+    })
+    setNewTodo("");
+}
     let updatetodo = (event) =>{
         setNewTodo(event.target.value);
+    }
+    let deleatTodo = (id)=>{
+       setTodos((prevTodos) => prevTodos.filter(todo => todo.id !== id));
+
     }
 
     return(
@@ -25,7 +31,11 @@ function Create_To_do(){
             <ul>
                 {
                     todos.map((todo) =>(
-                       <li key={todo.id}>{todo.task}</li>
+                       <li key={todo.id}>
+                        <span>{todo.task}</span>
+                        &nbsp;&nbsp;&nbsp;
+                        <button onClick={() => deleatTodo(todo.id)}>Delete</button>
+                        </li>
                     ))
                 }
 
