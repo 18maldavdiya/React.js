@@ -17,6 +17,7 @@ function Create_To_do(){
        setTodos((prevTodos) => prevTodos.filter(todo => todo.id !== id));
 
     }
+    
 
     return(
         <div>
@@ -40,6 +41,8 @@ function Create_To_do(){
                 }
 
             </ul>
+            <br></br>
+            <br></br>
         </div>
     )
 }
