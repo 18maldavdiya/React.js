@@ -1,10 +1,11 @@
 import { useState } from "react";
+import { v4 as uuidv4 } from 'uuid';
 function Create_To_do(){
-    let [todos,setTodos] = useState(["sample to do"]);
+    let [todos,setTodos] = useState([{task:"sample-task",id: uuidv4()}]);
     let [newTodo,setNewTodo] = useState("");
 
     let addnewTodo = () =>{
-        setTodos([...todos,newTodo]);
+        setTodos([...todos,{task: newTodo, id: uuidv4()}]);
         setNewTodo("");
     }
     let updatetodo = (event) =>{
@@ -24,7 +25,7 @@ function Create_To_do(){
             <ul>
                 {
                     todos.map((todo) =>(
-                       <li>{todo}</li>
+                       <li key={todo.id}>{todo.task}</li>
                     ))
                 }
 
