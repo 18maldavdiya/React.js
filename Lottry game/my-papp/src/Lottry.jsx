@@ -1,8 +1,9 @@
 import { useState } from "react";
 import "./Lottry.css";
+import {genTicket} from "./helper";
 
 function Lottry(){
-    let [ticket, setTicket] = useState([0 , 0 ,0]);
+    let [ticket, setTicket] = useState(genTicket(3));
     return(
         <div>
             <h2>Lottry Game</h2>
