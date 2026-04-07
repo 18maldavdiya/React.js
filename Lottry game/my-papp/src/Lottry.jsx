@@ -1,4 +1,6 @@
 import { useState } from "react";
+import "./Lottry.css";
+
 function Lottry(){
     let [ticket, setTicket] = useState([0 , 0 ,0]);
     return(
