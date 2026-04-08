@@ -1,6 +1,6 @@
-function TicketNum({num}){
-    return(
-        <span>{num}</span>
+function TicketNum({ nums }) {
+    return (
+        <span>{nums}</span>
     )
 }
 export default TicketNum;
