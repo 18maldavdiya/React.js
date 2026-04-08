@@ -1,8 +1,11 @@
 import TicketNum from "./TicketNum"
+import "./Ticket.css";
 
 function Ticket({ ticket }) {
     return (
-        <div>
+       
+        <div className="Ticket">
+             <p>Ticket</p>
             {ticket.map((nums, idx) => (
                 <TicketNum nums={nums} key={idx} />
             ))}
