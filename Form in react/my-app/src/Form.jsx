@@ -6,7 +6,8 @@ function Form(){
     // let [userName ,setUserNaame] = useState("");
     let [formdata,setFormData] = useState({
         fulName: "",
-        userName: ""
+        userName: "",
+        password: ""
     });
 
     // let handleNameChange = (event) =>{
@@ -16,10 +17,8 @@ function Form(){
     //     setUserNaame(event.target.value);
     // }
     let handleInputChange = (event) =>{
-        let fieldName = event.target.name;
-        let newValue = event.target.value;
         setFormData((currData) =>{
-        return { ...currData,[fieldName]:newValue};
+        return { ...currData,[event.target.name]:event.target.value};
         })
       
     }
@@ -28,6 +27,7 @@ function Form(){
         setFormData({
             fulName: "",
             userName: "",
+            password: ""
         });
     }
 
@@ -49,6 +49,15 @@ function Form(){
             value={formdata.userName} 
             id="username"
             name="userName"
+            onChange={handleInputChange}
+            />
+            <br></br>
+            <br></br>
+            <lable htmlFor="password">Enter Password</lable>
+            <input type="text" placeholder="Enter your full name" 
+            value={formdata.password} 
+            id="password"
+            name="password"
             onChange={handleInputChange}
             />
             
