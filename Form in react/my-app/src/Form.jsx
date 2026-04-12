@@ -15,7 +15,10 @@ function Form(){
     //  let handleUsername = (event) =>{
     //     setUserNaame(event.target.value);
     // }
-    let fieldName
+    let handleInputChange = (event) =>{
+        let fieldName = event.target.name;
+        console.log(fieldName);
+    }
     return (
         
         <form>
