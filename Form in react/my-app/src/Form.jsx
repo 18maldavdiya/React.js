@@ -17,25 +17,39 @@ function Form(){
     // }
     let handleInputChange = (event) =>{
         let fieldName = event.target.name;
-        console.log(fieldName);
+        let newValue = event.target.value;
+        setFormData((currData) =>{
+        return { ...currData,[fieldName]:newValue};
+        })
+      
     }
+    let handleSubmit = (event) => {
+        event.preventDefault();
+        setFormData({
+            fulName: "",
+            userName: "",
+        });
+    }
+
     return (
         
-        <form>
+        <form onSubmit={handleSubmit}>
             
             <lable htmlFor="fullname">Full Name</lable>
             <input type="text" placeholder="Enter your full name" 
             value={formdata.fulName} 
-            onChange={handleNameChange}
             id="fullname"
+            name="fulName"
+            onChange={handleInputChange}
             />
             <br></br>
             <br></br>
             <lable htmlFor="username">User name</lable>
             <input type="text" placeholder="Enter your full name" 
             value={formdata.userName} 
-            onChange={handleUsername}
             id="username"
+            name="userName"
+            onChange={handleInputChange}
             />
             
             <button>Submit</button>
