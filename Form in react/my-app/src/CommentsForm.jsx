@@ -58,5 +58,5 @@ function CommentsForm(){
             </form>
         </div>
     )
-}
+
 export default CommentsForm;
