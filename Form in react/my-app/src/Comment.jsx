@@ -11,8 +11,9 @@ function Comment(){
             <h3>All comments</h3>
             <div className="comment">
                 <span>{comments[0].remarks}</span>
-                &bnsp;
-                <span>({comments[0].rating})</span>
+                 &nbsp;
+                <span>(rating = {comments[0].rating})</span>
+                <p>-{comments[0].username}</p>
             </div>
         </div>
     )
