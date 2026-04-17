@@ -7,6 +7,9 @@ function Comment(){
         remarks: "good product",
         rating : 4
     }])
+    let addnewComment = (newComment) => {
+    setComments((currentComments) => [...currentComments, newComment]);
+    }
     return(
         <div>
             <h3>All comments</h3>
@@ -16,6 +19,8 @@ function Comment(){
                 <span>(rating = {comments[0].rating})</span>
                 <p>-{comments[0].username}</p>
             </div>
+            <hr></hr>
+            <CommentsForm addnewComment={addnewComment}/>
         </div>
     )
 }
