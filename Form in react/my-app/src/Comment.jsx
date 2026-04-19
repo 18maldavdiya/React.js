@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CommentsForm from "./CommentsForm";
 import "./comment.css";
 
 function Comment(){
@@ -14,12 +15,15 @@ function Comment(){
     return(
         <div>
             <h3>All comments</h3>
-            <div className="comment">
-                <span>{comments[0].remarks}</span>
+            {comments.map((comment,idx) => (
+                <div className="comment" key ={idx}>
+                <span>{comment.remarks}</span>
                  &nbsp;
-                <span>(rating = {comments[0].rating})</span>
-                <p>-{comments[0].username}</p>
+                <span>(rating = {comment.rating})</span>
+                <p>-{comment.username}</p>
             </div>
+            ))}
+            
             <hr></hr>
             <CommentsForm addNewComment={addNewComment}/>
         </div>
