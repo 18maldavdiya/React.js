@@ -7,8 +7,9 @@ function Comment(){
         remarks: "good product",
         rating : 4
     }])
-    let addnewComment = (newComment) => {
-    setComments((currentComments) => [...currentComments, newComment]);
+
+    let addNewComment = (comment) => {
+    setComments((currentComments) => [...currentComments, comment]);
     }
     return(
         <div>
@@ -20,7 +21,7 @@ function Comment(){
                 <p>-{comments[0].username}</p>
             </div>
             <hr></hr>
-            <CommentsForm addnewComment={addnewComment}/>
+            <CommentsForm addNewComment={addNewComment}/>
         </div>
     )
 }
