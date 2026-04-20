@@ -22,7 +22,7 @@ function Comment(){
                 <span>(rating = {comment.rating})</span>
                 <p>-{comment.username}</p>
             </div>
-            ))}
+            ))
             
             <hr></hr>
             <CommentsForm addNewComment={addNewComment}/>
