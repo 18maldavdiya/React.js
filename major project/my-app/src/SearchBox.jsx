@@ -15,7 +15,7 @@ function SearchBox(){
     return (
         <div className="SearchBox">
             <h3>Search for weather</h3>
-            <form>
+            <form onSubmit = {handleSubmit}>
                 <TextField id="city" label="City Name" variant="outlined" required value={city} 
                 onChange={handleChange}/>
                 <br></br>
